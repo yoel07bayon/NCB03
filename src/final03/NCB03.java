@@ -711,35 +711,7 @@ public class NCB03 {
          }
           return matriz;
    }
-      
-      public int[][] ejer38(int dimen, int NumInit){
-     System.out.println("Ejercicio 38: ");
-        int[][] matriz=new int[dimen][dimen];
-        for (int prin = 0; prin < dimen/2; prin++) {
-            for (int ldx = dimen-prin-1;ldx > prin; ldx--) {
-                matriz[ldx][dimen-prin-1]= NumInit;
-                NumInit++;
-            }
-            for (int lsx = dimen-prin-1;lsx > prin; lsx--) {
-                matriz[prin][lsx]= NumInit;
-                NumInit++;  
-            } 
-            for (int lxx = prin; lxx < dimen-prin-1; lxx++) {
-                matriz[lxx][prin]= NumInit;
-             NumInit++;   
-            }
-            for (int lix = prin;lix < dimen-prin-1; lix++) {
-                matriz[dimen-prin-1][lix]= NumInit;
-                NumInit++;   
-            }
-        } 
-       if(dimen%2!=0){
-                matriz[dimen/2][dimen/2]=NumInit;
-            }
-        
-        return matriz;
- }   
-                
+            
  public int[][] ejer36(int dimen, int NumInit){
      System.out.println("Ejercicio 36: ");
         int[][] matriz=new int[dimen][dimen];
