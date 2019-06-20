@@ -711,7 +711,7 @@ public class NCB03 {
          }
           return matriz;
    }
-       
+      
       public int[][] ejer38(int dimen, int NumInit){
      System.out.println("Ejercicio 38: ");
         int[][] matriz=new int[dimen][dimen];
